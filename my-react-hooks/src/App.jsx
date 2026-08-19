@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Alert from "./Alert";
 
 function App() {
   const [color, setColor] = useState("red");
@@ -37,6 +38,17 @@ function App() {
       >
         Count
       </button>
+      <Alert>
+        <p>This is an alert box with paragraph</p>
+      </Alert>
+      <Alert>
+        <h3>H3 heading in an alert box</h3>
+        <p>paragraph in an alert box</p>
+      </Alert>
+      <Alert>
+        <p>An alert box with text and a dismiss button</p>
+        <button type="button">Dismiss</button>
+      </Alert>
     </>
   );
 }

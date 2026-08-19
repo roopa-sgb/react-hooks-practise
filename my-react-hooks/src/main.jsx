@@ -7,6 +7,6 @@ import UseContext from './useContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UseContext />
+    <App />
   </StrictMode>
 )
