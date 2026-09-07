@@ -74,14 +74,14 @@ function ProductList({ searchTerm, selectedCategory, handleCount }) {
     <>
       {products.map((product) => {
         return (
-          <>
-            <p key={product.id}>
+          <div key={product.id}>
+            <p>
               {product.name},{product.category}
             </p>
             <button type="button" onClick={handleCount}>
               Add to cart
             </button>
-          </>
+          </div>
         );
       })}
     </>
